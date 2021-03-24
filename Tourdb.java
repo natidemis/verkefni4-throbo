@@ -1,27 +1,3 @@
-public class Tourdb {
-    private Connection conn;
+public interface Tourdb {
     
-
-    
-    //breyta í lýsandi nöfnum
-    public void insert() {
-
-    }
-
-    public Tour select() {
-
-    }
-    public void delete() {
-
-    }
-
-    public void create() {
-
-    }
-
-    public 
-
-    public static void main(String[] args) {
-        
-    }
 }

@@ -1,6 +1,6 @@
 public class TourController {
     private Tour tours[];
-    private Tourdb tourdb;
+    private TourDb tourdb;
 
     public TourController() {
         //Kalla á TourDb og búa til tour gögn
