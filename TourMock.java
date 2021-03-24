@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class TourMock {
+public class TourMock implements Tour {
     private Date dates[];
     private String description;
     private String price;//?

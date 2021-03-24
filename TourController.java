@@ -1,5 +1,4 @@
 public class TourController {
-    private Tour tours[];
     private TourDb tourdb;
 
     public TourController() {
