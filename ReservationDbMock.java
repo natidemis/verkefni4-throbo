@@ -1,4 +1,4 @@
-public class TourDbMock implements TourDb {
+public class ReservationDbMock implements ReservationDb {
     private Connection conn;
     
 
