@@ -3,7 +3,7 @@ public class ReservationDbMock implements ReservationDb {
     
 
     
-    //breyta í lýsandi nöfnum
+    //breyta í lýsandi nöfn
     public void insert() {
 
     }
