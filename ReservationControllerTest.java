@@ -5,7 +5,7 @@ public class ReservationControllerTest {
     private ReservationDbMock resDbMock;
     private ReservationController resController;
     private DateMock d1, d2;
-    private CustomerMock c1, c2;
+    private CustomerMock c1, c21, c22, c23, c24;
 
     @Before
     public void setUp() {
@@ -14,7 +14,10 @@ public class ReservationControllerTest {
         d1 = new DateMock(0);
         d2 = new DateMock(4);
         c1 = new CustomerMock("Siggi", "siggi@hi.is");
-        c2 = new CustomerMock("Lalli", "lalligerðivitlaust");
+        c21 = new CustomerMock("Lalli", "lalligerðivitlaust");
+        c22 = new CustomerMock(null, "lalli@hi.is");
+        c23 = new CustomerMock("Lalli", null);
+        c24 = new CustomerMock(null, null);
     }
 
     @After
@@ -24,7 +27,10 @@ public class ReservationControllerTest {
         d1 = null;
         d2 = null;
         c1 = null;
-        c2 = null;
+        c21 = null;
+        c22 = null;
+        c23 = null;
+        c24 = null;
     }
 
     @Test
@@ -35,7 +41,13 @@ public class ReservationControllerTest {
 
     @Test
     public void testUser() {
-        boolean res = resController.makeReservation(d1, c2, 3);
-        assertFalse(res);
+        boolean reservation1 = resController.makeReservation(d2, c21, 3);
+        boolean reservation2 = resController.makeReservation(d2, c22, 3);
+        boolean reservation3 = resController.makeReservation(d2, c23, 3);
+        boolean reservation4 = resController.makeReservation(d2, c24, 3);
+        assertFalse(reservation1);
+        assertFalse(reservation2);
+        assertFalse(reservation3);
+        assertFalse(reservation4);
     }
 }
