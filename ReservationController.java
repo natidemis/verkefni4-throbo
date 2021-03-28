@@ -6,6 +6,6 @@ public class ReservationController {
     }
 
     public boolean makeReservation(Date date, Customer customer, int noOfSeats) {
-
+        return true;
     }
 }

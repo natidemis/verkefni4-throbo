@@ -4,10 +4,8 @@ import static org.junit.Assert.*;
 public class ReservationControllerTest {
     private ReservationDbMock resDbMock;
     private ReservationController resController;
-    private DateMock d1, d2;
+    private DateMock d1, d2, d3;
     private CustomerMock c1, c21, c22, c23, c24;
-    private DateMock d1, d2,d3;
-    private CustomerMock c1, c2;
 
     @Before
     public void setUp() {
@@ -34,6 +32,7 @@ public class ReservationControllerTest {
         c22 = null;
         c23 = null;
         c24 = null;
+        d3 = null;
     }
 
     @Test
