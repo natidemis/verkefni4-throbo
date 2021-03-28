@@ -6,6 +6,8 @@ public class ReservationControllerTest {
     private ReservationController resController;
     private DateMock d1, d2;
     private CustomerMock c1, c21, c22, c23, c24;
+    private DateMock d1, d2,d3;
+    private CustomerMock c1, c2;
 
     @Before
     public void setUp() {
@@ -13,6 +15,7 @@ public class ReservationControllerTest {
         resController = new ReservationController(resDbMock);
         d1 = new DateMock(0);
         d2 = new DateMock(4);
+        d3 = new DateMock(5);
         c1 = new CustomerMock("Siggi", "siggi@hi.is");
         c21 = new CustomerMock("Lalli", "lalligerðivitlaust");
         c22 = new CustomerMock(null, "lalli@hi.is");
@@ -40,7 +43,7 @@ public class ReservationControllerTest {
     }
 
     @Test
-    public void testUser() {
+    public void testConsumer() {
         boolean reservation1 = resController.makeReservation(d2, c21, 3);
         boolean reservation2 = resController.makeReservation(d2, c22, 3);
         boolean reservation3 = resController.makeReservation(d2, c23, 3);
@@ -55,5 +58,7 @@ public class ReservationControllerTest {
     public void testNoOfSeats() {
         boolean reservation = resController.makeReservation(d1, c1, -5);
         assertFalse(reservation);
+        boolean trueReservation = resController.makeReservation(d3,c1,5);
+        assertTrue(trueReservation);
     }
 }
