@@ -3,6 +3,6 @@ public interface Customer {
 
     public String getEmail();
 
-    public String setEmail(String email);
+    public void setEmail(String email);
 
 }
