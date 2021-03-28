@@ -1,8 +1,7 @@
 public class ReservationDbMock implements ReservationDb {
 
-
     @Override
-    public void makeReservation(Date date, String customer, int noOfSeats){
+    public void book(Date date, Customer customer, int noOfSeats){
 
     }
 

@@ -1,3 +1,5 @@
 public interface Date {
-    public void get();
+    public int getAvailability();
+
+    public void setAvailability(int availability);
 }

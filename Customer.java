@@ -3,6 +3,4 @@ public interface Customer {
 
     public String getEmail();
 
-    public String setEmail(String email);
-
 }
