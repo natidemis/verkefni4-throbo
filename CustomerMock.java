@@ -16,5 +16,4 @@ public class CustomerMock implements Customer {
     public String getEmail() {
         return email;
     }
-
 }
