@@ -1,8 +1,9 @@
 public class ReservationController {
-    private ReservationDb tourdb;
+    private ReservationDb resDb;
 
-    public ReservationController() {
+    public ReservationController(ReservationDb resDb) {
         //Kalla á TourDb og búa til tour gögn
+        this.resDb = resDb;
     }
     public static void main(String[] args) {
         

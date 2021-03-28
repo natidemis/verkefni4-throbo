@@ -1,25 +1,9 @@
 public class ReservationDbMock implements ReservationDb {
-    private Connection conn;
-    
 
-    
-    //breyta í lýsandi nöfn
-    public void insert() {
+    @Override
+    public void makeReservation(Date date, String customer, int noOfSeats){
 
     }
-
-    public TourMock select() {
-
-    }
-    public void delete() {
-
-    }
-
-    public void create() {
-
-    }
-
-    public 
 
     public static void main(String[] args) {
         
