@@ -8,7 +8,7 @@ public class ReservationControllerTest {
     @Before
     public void setUp() {
         resDbMock = new ReservationDbMock();
-        resController = new resController(resDbMock);
+        resController = new ReservationController(resDbMock);
     }
 
     @After
