@@ -5,7 +5,7 @@ public class ReservationController {
         this.resDb = resDb;
     }
 
-    public void makeReservation(Date date, Customer customer, int noOfSeats) {
+    public boolean makeReservation(Date date, Customer customer, int noOfSeats) {
 
     }
 }
