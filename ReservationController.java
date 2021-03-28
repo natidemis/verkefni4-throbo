@@ -8,8 +8,4 @@ public class ReservationController {
     public void makeReservation(Date date, Customer customer, int noOfSeats) {
 
     }
-
-    public static void main(String[] args) {
-        
-    }
 }

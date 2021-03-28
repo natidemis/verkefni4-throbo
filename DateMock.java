@@ -1,10 +1,8 @@
 public class DateMock implements Date {
 
-    private String tourName;
     private int availability;
 
-    public DateMock(String tourName, int availability) {
-        this.tourName = tourName;
+    public DateMock(int availability) {
         this.availability = availability;
     }
 
@@ -17,6 +15,4 @@ public class DateMock implements Date {
     public void setAvailability(int availability) {
         this.availability = availability;
     }
-
-
 }
