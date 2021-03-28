@@ -22,7 +22,8 @@ public class ReservationControllerTest {
 
     @Test
     public void testNoAvailability() {
-        boolean res = resController.makeReservation(d1, c1, 2);
-        assertFalse(res);
+        boolean reservation = resController.makeReservation(d1, c1, 2);
+        assertFalse(reservation);
     }
+
 }
