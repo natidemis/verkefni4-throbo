@@ -50,4 +50,10 @@ public class ReservationControllerTest {
         assertFalse(reservation3);
         assertFalse(reservation4);
     }
+
+    @Test
+    public void testNoOfSeats() {
+        boolean reservation = resController.makeReservation(d1, c1, -5);
+        assertFalse(reservation);
+    }
 }
